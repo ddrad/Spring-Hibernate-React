@@ -40,13 +40,19 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     @Transactional
-    public Customer findById(String id) {
-        int intId = Integer.parseInt(id);
-        CustomerEntity customerEntity = dao.findById(intId);
+    public Customer findById(int id) {
+        CustomerEntity customerEntity = dao.findById(id);
         if (customerEntity == null) {
             return null;
         }
         return convert.toCustomer(customerEntity);
+    }
+
+    @Override
+    @Transactional
+    public Customer findById(String id) {
+        int intId = Integer.parseInt(id);
+        return findById(intId);
     }
 
     @Override

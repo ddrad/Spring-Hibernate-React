@@ -19,6 +19,8 @@ public class AuthorizationEntity {
     private String email;
     @Column(name = "pswd")
     private String password;
+    @Column(name = "customer_id")
+    private int customerId;
 
     public int getAuthorizationId() {
         return authorizationId;
@@ -52,5 +54,11 @@ public class AuthorizationEntity {
         this.password = password;
     }
 
+    public int getCustomerId() {
+        return customerId;
+    }
 
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
 }

@@ -1,21 +1,19 @@
 package com.azarov.projects.websocket.vo.tokenmessage;
 
-import com.azarov.projects.websocket.vo.data.DataRequest;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.azarov.projects.websocket.vo.data.Data;
 
 /**
  * Created by AzarovD on 23.08.2016.
  */
 public class TokenMessageRequest extends TokenMessage {
 
-    @JsonProperty("data")
-    DataRequest data;
+    Data data;
 
-    public DataRequest getData() {
+    public Data getData() {
         return data;
     }
 
-    public void setData(DataRequest data) {
+    public void setData(Data data) {
         this.data = data;
     }
 

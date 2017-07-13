@@ -15,6 +15,7 @@ public class AuthorizationConvert {
         Authorization authorizationInfo = new Authorization();
         authorizationInfo.setLogin(authorizationEntity.getLogin());
         authorizationInfo.setPassword(authorizationEntity.getPassword());
+        authorizationInfo.setCustomerId(authorizationEntity.getCustomerId());
         return authorizationInfo;
     }
 
@@ -22,6 +23,7 @@ public class AuthorizationConvert {
         AuthorizationEntity entity = new AuthorizationEntity();
         entity.setLogin(authorization.getLogin());
         entity.setPassword(authorization.getPassword());
+        entity.setCustomerId(authorization.getCustomerId());
         return entity;
     }
 }

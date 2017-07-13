@@ -1,15 +1,12 @@
 package com.azarov.projects.websocket.vo.tokenmessage;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Created by AzarovD on 23.08.2016.
  */
 public abstract class TokenMessage {
 
-    @JsonProperty("type")
     String type;
-    @JsonProperty("sequence_id")
     String sequenceId;
 
     public String getType() {

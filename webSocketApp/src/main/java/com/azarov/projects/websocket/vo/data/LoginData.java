@@ -1,14 +1,11 @@
 package com.azarov.projects.websocket.vo.data;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 /**
  * Created by AzarovD on 23.08.2016.
  */
-public class DataRequest extends Data {
-    @JsonProperty("login")
+public class LoginData extends Data {
+
     String login;
-    @JsonProperty("password")
     String password;
 
     public String getLogin() {
@@ -32,7 +29,7 @@ public class DataRequest extends Data {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        DataRequest data = (DataRequest) o;
+        LoginData data = (LoginData) o;
 
         if (login != null ? !login.equals(data.login) : data.login != null) return false;
         return password != null ? password.equals(data.password) : data.password == null;

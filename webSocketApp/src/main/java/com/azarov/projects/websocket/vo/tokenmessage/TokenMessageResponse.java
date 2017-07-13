@@ -8,7 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public class TokenMessageResponse extends TokenMessage {
 
-    @JsonProperty("data")
     Data data;
 
     public Data getData() {

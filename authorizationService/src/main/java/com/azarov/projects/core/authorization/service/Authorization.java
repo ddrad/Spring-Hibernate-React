@@ -8,6 +8,7 @@ public class Authorization {
 
     private String login;
     private String password;
+    private int customerId;
 
     public String getLogin() {
         return login;
@@ -23,5 +24,13 @@ public class Authorization {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 }

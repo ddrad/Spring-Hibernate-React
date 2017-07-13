@@ -8,10 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DataError extends Data {
 
-    @JsonProperty("error_description")
-    private String errorDescription;
-    @JsonProperty("error_code")
     protected ErrorCode errorCode;
+    private String errorDescription;
 
     public String getErrorDescription() {
         return errorDescription;

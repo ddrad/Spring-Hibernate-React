@@ -11,6 +11,8 @@ public interface CustomerService {
 
     Customer saveCustomer(Customer customer);
 
+    Customer findById(int id);
+
     Customer findById(String id);
 
     List<Customer> findAllEmployees();
