@@ -30,6 +30,6 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/js/**").addResourceLocations("/js/");
+        registry.addResourceHandler("/ui/**").addResourceLocations("/ui/");
     }
 }
