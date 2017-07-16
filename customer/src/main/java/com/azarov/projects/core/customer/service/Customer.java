@@ -1,6 +1,5 @@
 package com.azarov.projects.core.customer.service;
 
-import com.azarov.projects.core.address.service.AddressInfo;
 import com.azarov.projects.core.authorization.service.Authorization;
 import com.azarov.projects.core.business.customer.service.BusinessCustomer;
 
@@ -17,7 +16,6 @@ public class Customer {
     private String lastName;
     private String middleName;
     private BusinessCustomer businessCustomer;
-    private List<AddressInfo> addressInfos;
     private Authorization authorizationInfo;
 
     public int getId() {
@@ -60,13 +58,6 @@ public class Customer {
         this.businessCustomer = businessCustomer;
     }
 
-    public List<AddressInfo> getAddressInfos() {
-        return addressInfos;
-    }
-
-    public void setAddressInfos(List<AddressInfo> addressInfos) {
-        this.addressInfos = addressInfos;
-    }
 
     public Authorization getAuthorizationInfo() {
         return authorizationInfo;
@@ -89,8 +80,6 @@ public class Customer {
         if (middleName != null ? !middleName.equals(customer.middleName) : customer.middleName != null) return false;
         if (businessCustomer != null ? !businessCustomer.equals(customer.businessCustomer) : customer.businessCustomer != null)
             return false;
-        if (addressInfos != null ? !addressInfos.equals(customer.addressInfos) : customer.addressInfos != null)
-            return false;
         return authorizationInfo != null ? authorizationInfo.equals(customer.authorizationInfo) : customer.authorizationInfo == null;
     }
 
@@ -101,7 +90,6 @@ public class Customer {
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (middleName != null ? middleName.hashCode() : 0);
         result = 31 * result + (businessCustomer != null ? businessCustomer.hashCode() : 0);
-        result = 31 * result + (addressInfos != null ? addressInfos.hashCode() : 0);
         result = 31 * result + (authorizationInfo != null ? authorizationInfo.hashCode() : 0);
         return result;
     }

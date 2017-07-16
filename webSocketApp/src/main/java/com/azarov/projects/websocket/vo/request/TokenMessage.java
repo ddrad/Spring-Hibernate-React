@@ -1,4 +1,4 @@
-package com.azarov.projects.websocket.vo.tokenmessage;
+package com.azarov.projects.websocket.vo.request;
 
 
 /**

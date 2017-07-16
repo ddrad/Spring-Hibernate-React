@@ -1,11 +1,12 @@
-package com.azarov.projects.websocket.vo.tokenmessage;
+package com.azarov.projects.websocket.vo.response;
 
 import com.azarov.projects.websocket.vo.data.Data;
+import com.azarov.projects.websocket.vo.request.TokenMessage;
 
 /**
  * Created by AzarovD on 23.08.2016.
  */
-public class TokenMessageRequest extends TokenMessage {
+public class TokenMessageResponse extends TokenMessage {
 
     Data data;
 
@@ -23,7 +24,7 @@ public class TokenMessageRequest extends TokenMessage {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        TokenMessageRequest that = (TokenMessageRequest) o;
+        TokenMessageResponse that = (TokenMessageResponse) o;
 
         return data != null ? data.equals(that.data) : that.data == null;
 

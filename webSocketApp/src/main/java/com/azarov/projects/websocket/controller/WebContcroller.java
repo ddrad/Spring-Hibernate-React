@@ -2,27 +2,27 @@ package com.azarov.projects.websocket.controller;
 
 import com.azarov.projects.core.authorization.service.Authorization;
 import com.azarov.projects.core.authorization.service.AuthorizationService;
-import com.azarov.projects.core.customer.service.Customer;
 import com.azarov.projects.core.customer.service.CustomerService;
 import com.azarov.projects.core.token.service.TokenData;
 import com.azarov.projects.core.token.service.TokenService;
-import com.azarov.projects.websocket.vo.data.AliasData;
 import com.azarov.projects.websocket.vo.data.DataError;
 import com.azarov.projects.websocket.vo.data.ErrorCode;
 import com.azarov.projects.websocket.vo.data.LoginData;
-import com.azarov.projects.websocket.vo.tokenmessage.TokenMessageRequest;
-import com.azarov.projects.websocket.vo.tokenmessage.TokenMessageResponse;
-import com.azarov.projects.websocket.vo.tokenmessage.TokenMessageType;
+import com.azarov.projects.websocket.vo.request.LoginRequest;
+import com.azarov.projects.websocket.vo.response.TokenMessageResponse;
+import com.azarov.projects.websocket.vo.request.TokenMessageType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 import java.util.UUID;
 
 /**
@@ -47,11 +47,19 @@ public class WebContcroller {
     @Qualifier("customerService")
     private CustomerService customerService;
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public
     @ResponseBody
-    public String login(@RequestBody TokenMessageRequest loginRequest) throws JsonProcessingException {
+    String index (){
+        return "/ui/index.html";
+    }
 
-        LoginData loginData = (LoginData) loginRequest.getData();
+    @RequestMapping(value = "/login", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public
+    @ResponseBody
+    String login(@RequestBody LoginRequest loginRequest) throws JsonProcessingException {
+
+        LoginData loginData = loginRequest.getData();
         Authorization authorizationInfo = getAuthorizationInfo(loginData.getLogin(), loginData.getPassword());
         if (authorizationInfo == null) {
             return new ObjectMapper().writeValueAsString(buildFailedAuthorizationResponse());
@@ -84,9 +92,7 @@ public class WebContcroller {
     private TokenMessageResponse buildDataSuccess(TokenData tokenData) {
         TokenMessageResponse response = new TokenMessageResponse();
         response.setType(TokenMessageType.CUSTOMER_API_TOKEN.name());
-        AliasData data = new AliasData();
-        data.setTokenAlias(tokenData.getAlias());
-        response.setData(data);
+        response.setSequenceId(tokenData.getAlias());
         return response;
     }
 }

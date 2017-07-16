@@ -13,7 +13,7 @@
 //import com.azarov.projects.core.token.service.TokenData;
 //import com.azarov.projects.core.token.service.TokenService;
 //import com.azarov.projects.websocket.vo.data.*;
-//import com.azarov.projects.websocket.vo.tokenmessage.*;
+//import com.azarov.projects.websocket.vo.request.*;
 //import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 //import org.joda.time.DateTime;
 //import org.springframework.beans.factory.annotation.Autowired;

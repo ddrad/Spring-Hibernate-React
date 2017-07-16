@@ -1,3 +1,4 @@
+/*
 package com.azarov.projects.websocket.configure;
 
 import org.springframework.context.annotation.Configuration;
@@ -8,9 +9,11 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.server.standard.TomcatRequestUpgradeStrategy;
 import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
 
+*/
 /**
  * Created by AzarovD on 23.08.2016.
- */
+ *//*
+
 
 @Configuration
 @EnableWebSocketMessageBroker
@@ -28,4 +31,4 @@ public class AppWebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer
         registry.addEndpoint("/sendMessage").setAllowedOrigins("*").withSockJS();
         registry.addEndpoint("/create").setAllowedOrigins("*").withSockJS();
     }
-}
+}*/

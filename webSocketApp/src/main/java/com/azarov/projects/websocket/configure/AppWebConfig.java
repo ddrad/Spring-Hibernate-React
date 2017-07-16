@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 @Configuration
 @ComponentScan("com.azarov.projects.websocket")
 @EnableWebMvc
-@Import({HibernateConfiguration.class, AppWebSocketConfig.class})
+@Import({HibernateConfiguration.class})
 public class AppWebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public UrlBasedViewResolver setupViewResolver() {
@@ -30,6 +30,6 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/ui/**").addResourceLocations("/ui/");
+        registry.addResourceHandler("/ui/**").addResourceLocations("/static/");
     }
 }

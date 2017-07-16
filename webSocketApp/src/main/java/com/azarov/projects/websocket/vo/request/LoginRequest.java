@@ -1,20 +1,19 @@
-package com.azarov.projects.websocket.vo.tokenmessage;
+package com.azarov.projects.websocket.vo.request;
 
-import com.azarov.projects.websocket.vo.data.Data;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.azarov.projects.websocket.vo.data.LoginData;
 
 /**
  * Created by AzarovD on 23.08.2016.
  */
-public class TokenMessageResponse extends TokenMessage {
+public class LoginRequest extends TokenMessage {
 
-    Data data;
+    LoginData data;
 
-    public Data getData() {
+    public LoginData getData() {
         return data;
     }
 
-    public void setData(Data data) {
+    public void setData(LoginData data) {
         this.data = data;
     }
 
@@ -24,7 +23,7 @@ public class TokenMessageResponse extends TokenMessage {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        TokenMessageResponse that = (TokenMessageResponse) o;
+        LoginRequest that = (LoginRequest) o;
 
         return data != null ? data.equals(that.data) : that.data == null;
 
