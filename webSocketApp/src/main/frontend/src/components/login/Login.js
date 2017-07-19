@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Button from 'react-bootstrap/lib/Button'
+import {PageHeader} from 'react-bootstrap'
 
 class Login extends Component {
 
@@ -60,17 +62,66 @@ class Login extends Component {
 
   render() {
         return (
-          <form onSubmit={this.handleSubmit}>
-            <label>
-                Name:
-                <input type="text" name="login" value={this.state.value} onChange={this.handleChange} />
-            </label>            
-             <label>
-                Password:
-                <input type="text" name="password" value={this.state.value} onChange={this.handleChange} />
-            </label>            
-            <input type="submit" value="Submit" />
-          </form>    
+        
+        <div className="container">
+          <div className="row">
+        
+            <div className="Absolute-Center is-Responsive">
+                    <PageHeader className="text-center">Log-In</PageHeader>
+                  
+                    <div className="col-sm-12 col-md-6 col-md-offset-3">
+
+                    <form onSubmit={this.handleSubmit}>
+                  
+                      <div className="form-group input-group">
+                        <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
+                        <input className="form-control" type="text" name='login' placeholder="username" value={this.state.value} onChange={this.handleChange}/>          
+                      </div>
+                      
+                      <div className="form-group input-group">
+                        <span className="input-group-addon"><i className="glyphicon glyphicon-lock"></i></span>
+                        <input className="form-control" type="password" name='password' placeholder="password" value={this.state.value} onChange={this.handleChange}/>     
+                      </div>
+
+                      <div className="form-group">
+                         <Button type="submit" className="btn btn-primary btn-block">Log-in</Button>
+                      </div>
+                      <div className="form-group text-center">
+                        <a href="#">Forgot Password</a>&nbsp;|&nbsp;<a href="#">Support</a>
+                      </div>
+                       <div className="form-group">
+                        <Button type="button" className="btn btn-success btn-block">New Registration</Button>  
+                      </div>
+
+                        {/*<Row className="col-md-6 col-md-offset-3"> 
+                            <label>
+                                Name:
+                                <input type="text" className="form-control"  name="login" value={this.state.value} onChange={this.handleChange} />
+                            </label>
+                        </Row>   
+                        
+                        <Row className="col-md-6 col-md-offset-3">         
+                          <label>
+                            Password:
+                              <input type="text" className="form-control"  name="password" value={this.state.value} onChange={this.handleChange} />
+                          </label>            
+                        </Row> 
+                        <Row className="col-md-6 col-md-offset-3">             
+                            <Button bsStyle='primary' type="submit">
+                              Log-in
+                            </Button>              
+                            <a role='button'>Remember password?</a>              
+                        </Row>
+                        <Row className="col-md-6 col-md-offset-3">  
+                           <a role='button'>New Regestration</a>               
+                          </Row>*/}
+                      </form>
+                      </div>
+               
+             </div>
+        </div>          
+     </div>  
+
         );
     }
 }
