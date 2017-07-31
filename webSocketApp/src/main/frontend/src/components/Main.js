@@ -1,37 +1,30 @@
 import React, {Component} from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom'
+import Login from '../components/Login';
+import Welcome from './Content';
 
-import Login from './login/Login';
-import App from './app/App';
-import Registration from './registration/Registration';
-import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom'
-
-
-const Links = () => (
-    <nav>
-        <Link to='/'>App</Link>
-        <Link to='/login'>Login</Link>
-        <Link to='/registration'>Registration</Link>
-    </nav>
-);
-
-const Main = () => (
-    <Router>
-        <Switch>
-            <Route exact path='/' render={() => (
-                isValidTokenAlias('valid-alias-test') ? <App/> : <Redirect to={'/login'}/>
-            )}/>
-            <Route path='/login' component={Login}/>
-            <Route path='/registration' component={Registration}/>
-        </Switch>
-    </Router>
-)
+class Main extends Component {
+    render() {
+        return (
+            <div>
+                <Switch>
+                    {/*<Route exact path='/' render={() => (isValidTokenAlias('valid-alias-test') ? <Welcome/> : <Redirect to={'/login'}/>*/}
+                    {/*)}/>*/}
+                    <Route exact path='/' component={Welcome}/>
+                    <Route path='/login' component={Login}/>
+                    <Route path='/registration' component={Welcome}/>
+                </Switch>
+            </div>
+        );
+    }
+}
 
 function isValidTokenAlias(alias) {
     {/* Here we have to check token alis*/
     }
-    const val = false;
+    const val = true;
     console.log('isValidTokenAlias = ' + val);
     return val;
 }
 
-export default Main
+export default Main;

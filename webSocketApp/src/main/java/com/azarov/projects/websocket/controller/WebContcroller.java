@@ -51,7 +51,7 @@ public class WebContcroller {
     public
     @ResponseBody
     String index (){
-        return "/ui/index.html";
+        return "/ui/template.html";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)

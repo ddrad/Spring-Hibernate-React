@@ -1,0 +1,620 @@
+body {
+    display: block;
+    margin: 2px;
+}
+
+div {
+    border: none !important;
+    font-family: Ebrima, Arial, Sans-serif;
+}
+
+.header {
+    margin-left: 23%;
+    margin-right: 24%;
+}
+
+.header h1 {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: normal;
+    color: #333333;
+    background-color: #FFFFFF;
+    padding-left: 16px;
+}
+
+.header .header-top {
+}
+
+.header .header-top .header-top-nav {
+    float: right;
+}
+
+.header .header-top .header-top-logo {
+    overflow: hidden;
+    padding-left: 16px;
+}
+
+.header .header-top .header-top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .header-top .header-top-nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.header .header-top .header-top-nav ul li ul {
+    display: none;
+}
+
+.header .header-top .header-top-nav ul li ul li {
+    border-top: 0;
+}
+
+.header .header-top .header-top-nav ul li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #0072c6;
+}
+
+.drop > a:after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 45%;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #0072c6;
+    border-right: 5px solid transparent;
+    z-index: 999;
+}
+
+.header .header-top .header-top-nav ul li a:hover {
+}
+
+.header .header-top .header-top-nav ul li p {
+}
+
+.header .header-top .header-top-nav ul li p span {
+}
+
+.header .header-top .header-top-nav li:hover > ul {
+    display: block;
+    position: absolute;
+}
+
+.header .header-top .header-top-nav li:hover li {
+    float: none;
+}
+
+.header .header-top .header-top-nav li:hover li a:hover {
+}
+
+.header .header-top .header-top-nav li:hover a {
+}
+
+.header .header-top .header-top-nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.header .header-top .header-top-nav ul:before, ul:after {
+    content: " ";
+    display: table;
+}
+
+.header .header-top .header-top-nav ul:after {
+    clear: both;
+}
+
+.header .menu #nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header .menu #nav li {
+    float: left;
+}
+
+.header .menu #nav li a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.header .menu #nav li a:hover {
+    text-decoration: underline;
+
+}
+
+.header .menu #nav li a:active {
+    text-decoration: underline;
+}
+
+.header .menu {
+
+}
+
+.header .menu #nav {
+    overflow: hidden;
+}
+
+.header .menu .soc {
+    float: right;
+}
+
+.header .menu .soc img {
+    border: none;
+    padding: 5px;
+    width: 27px;
+}
+
+.header .menu .soc img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 26, 22, 0.5);
+
+}
+
+.header .menu .soc a {
+    text-decoration: none;
+}
+
+.main-banner {
+    height: 405px;
+    border: 2px solid #000;
+    background: url(../img/header.png) center no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    min-height: 700px;
+    height: 1337px;
+    background: #f5f5f5;
+}
+
+.content_main_block {
+    position: relative;
+    top: -75px;
+    height: 305px;
+    margin: 0 24%;
+}
+
+.content_main_block .inline {
+    float: left;
+    display: flex;
+}
+
+.content_block {
+    width: 48%;
+    background: #FFFFFF;
+    float: left;
+    margin: 0 0 3% 0;
+    text-align: center;
+    display: block
+}
+
+.content_block_separate {
+    width: 3%;
+    height: 250px;
+    float: left;
+    margin: 0;
+}
+
+.content_block div {
+    display: inline-block;
+    float: left;
+}
+
+.content_block div span {
+    background: url(../img/art_back_purp.png);
+    background-size: cover;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 8px;
+    float: left;
+    margin: 17% 0 17% 17%;
+    font-size: 16px;
+    height: 22px;
+    width: 100%;
+}
+
+.content_block .content_img {
+    width: 100%;
+    margin: 0 0 2% 0;
+}
+
+.content_block .content_img .without-content {
+    /*background: url(../img/arcticue_7.png) center no-repeat;*/
+    background-size: cover;
+    /*display: block;*/
+    height: 280px;
+}
+
+.content_block .content_img .without-content img {
+    width: 100%;
+    margin: 0;
+}
+
+.content_block .content_img img {
+    width: 93%;
+    height: 98%;
+    margin: 0 auto;
+}
+
+.content_block .content_img img.large {
+    margin-bottom: 0;
+}
+
+.content_block .content_img .ex {
+    margin-left: -42%;
+    margin-right: 3%;
+
+}
+
+.content_block .content_img .ex img {
+    width: 100%;
+}
+
+.content_block .desc {
+    margin: 0 0 0 4%;
+    text-align: left;
+    font-size: 16px;
+    min-height: 100px;
+}
+
+.inline.h_sep {
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.content .horiz_separate {
+    background: #5c2d91;
+    height: 25px;
+    padding: 7px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact {
+    background-color: #FFFFFF;
+
+    float: left;
+    width: 100%;
+}
+
+.contact .contact-text {
+    margin: 0 24%;
+    position: relative;
+}
+
+h2.purple {
+    font-size: 26px;
+    color: #5c2d91;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: "Segoe UI Bold", "Segoe UI";
+    font-weight: 700;
+}
+
+.contact .contact-text .contact-text-content {
+    width: 60%;
+}
+
+.contact .social-buttons {
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-align: right;
+}
+
+.contact .social-buttons a {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.contact .social-buttons img {
+    display: block;
+}
+
+.contact p {
+    font-size: 14px;
+}
+
+.content .o_yak {
+    background-color: #FFFFFF;
+    margin: 0 24%;
+    float: left;
+}
+
+.o_yak .yak_block {
+    display: block;
+}
+
+.o_yak .yak_block .yak_block-nav {
+    float: right;
+    width: 60%
+}
+
+.o_yak .yak_block .yak_block-nav p {
+    font-size: 14px;
+}
+
+.o_yak .yak_block .yak_block-logo {
+    overflow: hidden;
+    width: 40%
+}
+
+.o_yak .yak_block .yak_block-logo img {
+    width: 90%;
+    height: 90%;
+}
+
+.o_yak .yak_block .yak_block-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.o_yak .yak_block .yak_block-nav ul li {
+    float: left;
+    background-color: #5c2d91;
+    margin: 0 15px;
+    width: 170px;
+    height: 38px;
+}
+
+.o_yak .yak_block .yak_block-nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.o_yak .yak_block .yak_block-nav ul li a:hover {
+    background-color: #723eac;
+}
+
+.nav-panel {
+    float: left;
+    min-height: 20%;
+    border: 2px solid #000;
+    background: #5c2d91;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.nav-panel .nav-panel-content {
+    margin: 0 24%;
+}
+
+.nav-panel ul {
+    list-style-type: none;
+    margin: 7% 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.nav-panel ul li {
+    float: left;
+    background-color: #5c2d91;
+    width: 29%;
+}
+
+.nav-panel ul li a img {
+    width: 100%;
+}
+
+.nav-panel ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav-panel ul li.middle {
+    margin: 0 6%;
+}
+
+.footer {
+    float: left;
+    min-height: 20%;
+    border: 2px solid #000;
+    background: #eeeeee;
+    width: 100%;
+    margin: 5% 0 0 0;
+}
+
+.footer ul li a {
+    font-size: 1em;
+    color: #1a1a1a;
+}
+
+.footer .footer-content {
+    margin: 0 24%;
+}
+
+.footer-content-main-inline {
+    float: left;
+}
+
+.footer-content-main-inline .footer-content-main-item {
+    float: left;
+}
+
+.footer-content-main-inline .footer-content-main-item ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico {
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li {
+    padding-left: 5px;
+    list-style: none;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.windows {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/windows_symbol.png?version=f1f9db81-67ef-8866-1be3-d5b1c1bb0b26) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.office {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/office_symbol.png?version=8a3d8983-7b8d-c5b3-875b-504f8b2d0fa2) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.surface {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/surface_symbol.png?version=61805fc9-0b7e-610c-b375-0d1f800d6ee8) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.lumia {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/nokia_symbol_clr_52x52.png?version=fcf4dd12-804c-280b-fe6c-3b3c9c71940c) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.xbox {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/xbox_symbol.png?version=8dc5af5f-c398-c2b1-1704-f327c77085c1) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.skype {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/skype_symbol.png?version=329162f4-4d39-4899-1232-40b0a4bfb87b) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.msn {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/msn_symbol_clr_52x52.png?version=25f248ec-ea55-f90a-45fc-08a996f03f12) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.bing {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/bing_symbol.png?version=5e8cc4ee-663c-5970-919e-9bc72fb1a2ec) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li.msstore {
+    background: url(https://c.s-microsoft.com/pl-pl/CMSImages/store_symbol.png?version=e2eecca5-4550-10c6-57b1-5114804a4c01) no-repeat;
+    background-position-x: 0px;
+    background-size: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.ui-ico li a {
+    padding-left: 45px;
+    margin-top: 0;
+    color: #1a1a1a;
+    font-size: 14px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.simple {
+
+}
+
+.footer-content-main-inline .footer-content-main-item ul.simple li {
+    width: 70%;
+    display: block;
+}
+
+.footer-content-main-inline .footer-content-main-item ul.simple li a {
+    color: #0072c6;
+    font-size: 10px;
+}
+
+.footer-content-main-inline ui li a img {
+}
+
+.footer-content-main-inline ui li img {
+}
+
+.footer-content-main .footer-down{
+    float:left;
+}
+
+
+.footer-content-main .footer-down .footer-content-main-item span a{
+    font-size: 12px;
+    color: #0072c6;
+    text-decoration: none;
+}
+.footer-content-main .footer-down .footer-content-main-item{
+    float:left;
+}
+
+.footer-content-main .footer-down .footer-content-main-item ul.f-d-u{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-content-main .footer-down .footer-content-main-item ul.f-d-u li{
+    float: left;
+}
+
+.footer-content-main .footer-down .footer-content-main-item ul.f-d-u li a {
+    display: block;
+    color: #0072c6;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 10px;
+}
+.footer-content-main .footer-down .footer-content-main-item ul.f-d-u li.heading {
+    display: block;
+    color: #ccc;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+
