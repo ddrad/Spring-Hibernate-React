@@ -82,13 +82,15 @@ class Footer extends Component {
 
                         <div className="footer-down">
 
-                            <div className="footer-content-main-item">
-                        <span>
-                        <a target="_self" className="mscom-link"
-                           href="#">Polska - Polski</a></span>
-                            </div>
+                            {/*<div className="footer-content-main-item">*/}
+                        {/*<span>*/}
+                        {/*<a target="_self" className="mscom-link"*/}
+                           {/*href="#">Polska - Polski</a></span>*/}
+                            {/*</div>*/}
                             <div className="footer-content-main-item">
                                 <ul className="f-d-u">
+                                    <li><a target="_self" className="mscom-link"
+                                              href="#">Polska - Polski</a></li>
                                     <li><a href="#">Pomoc</a></li>
                                     <li><a href="#">Poufność i cookies</a></li>
                                     <li><a href="#">Zasady użytkowania</a></li>

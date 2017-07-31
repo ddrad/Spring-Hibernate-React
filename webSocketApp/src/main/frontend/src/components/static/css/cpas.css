@@ -183,7 +183,7 @@ div {
 
 .content_main_block {
     position: relative;
-    top: -75px;
+    top: -2%;
     height: 305px;
     margin: 0 24%;
 }
@@ -233,10 +233,9 @@ div {
 }
 
 .content_block .content_img .without-content {
-    /*background: url(../img/arcticue_7.png) center no-repeat;*/
+    background: url(../img/arcticue_7.png) center no-repeat;
     background-size: cover;
-    /*display: block;*/
-    height: 280px;
+    width: 100%;
 }
 
 .content_block .content_img .without-content img {
@@ -406,7 +405,6 @@ h2.purple {
 
 .nav-panel ul {
     list-style-type: none;
-    margin: 7% 0;
     padding: 0;
     background-color: #FFFFFF;
     width: 100%;
@@ -414,6 +412,7 @@ h2.purple {
 
 .nav-panel ul li {
     float: left;
+    margin: 3% 0;
     background-color: #5c2d91;
     width: 29%;
 }
@@ -432,7 +431,7 @@ h2.purple {
 }
 
 .nav-panel ul li.middle {
-    margin: 0 6%;
+    margin: 3% 6%;
 }
 
 .footer {
@@ -473,6 +472,15 @@ h2.purple {
 .footer-content-main-inline .footer-content-main-item ul.ui-ico li {
     padding-left: 5px;
     list-style: none;
+}
+
+.footer-content-main-inline .footer-content-main-item ul li  {
+}
+.footer-content-main-inline .footer-content-main-item ul li.heading {
+    padding-left: 5px;
+    list-style: none;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 .footer-content-main-inline .footer-content-main-item ul.ui-ico li.windows {
@@ -566,7 +574,7 @@ h2.purple {
 
 .footer-content-main-inline .footer-content-main-item ul.simple li a {
     color: #0072c6;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .footer-content-main-inline ui li a img {
@@ -606,7 +614,7 @@ h2.purple {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
 }
 .footer-content-main .footer-down .footer-content-main-item ul.f-d-u li.heading {
     display: block;
@@ -614,7 +622,7 @@ h2.purple {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
